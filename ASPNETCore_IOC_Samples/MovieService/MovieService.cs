@@ -11,7 +11,7 @@ namespace MovieService
     public class MyMovieService : IMovieService
     {
         private IList<Movie> movieList;
-        public MovieService()
+        public MyMovieService()
         {
             movieList = new List<Movie>();
 
