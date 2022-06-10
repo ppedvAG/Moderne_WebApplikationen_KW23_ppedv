@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MovieAPIService.Data;
+using MovieAPIService.DTO;
 using MovieAPIService.Models;
+using MovieAPIService.DTO.Mapper;
 
 namespace MovieAPIService.Controllers
 {
@@ -23,23 +25,49 @@ namespace MovieAPIService.Controllers
 
         // GET: api/Movies
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Movie>>> GetMovies()
+        public IEnumerable<MovieDTO> GetMovies()
         {
-            return await _context.Movies.Include(c=>c.MovieComments).ToListAsync();
+            IList<Movie> movies = _context.Movies.Include(c=>c.MovieComments).ToList();
+
+            return movies.MoviesToDTOsWithRelation();
+        }
+
+        // GET: api/Movies
+        [HttpGet("GetMoviesWithEasyPaging")]
+        public IEnumerable<MovieDTO> GetMovies(int pageIndex, int pageSize, string search)
+        {
+            IList<Movie> movies = _context.Movies.Include(c => c.MovieComments)
+                                                 .Where(m=>m.Title.Contains(search) || m.Description.Contains(search))
+                                                 .Skip((pageIndex-1)*pageSize).Take(pageSize)
+                                                 .ToList();
+
+            return movies.MoviesToDTOsWithRelation();
         }
 
         // GET: api/Movies/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Movie>> GetMovie(int id)
+        public async Task<ActionResult<MovieDTO>> GetMovie(int id)
         {
-            var movie = await _context.Movies.FindAsync(id);
+            //Movie - Objekt mit Relation zur Commentar Tabell (1:n)
+            Movie currentMovie = await _context.Movies.Include(c => c.MovieComments).SingleOrDefaultAsync(m => m.Id == id);
 
-            if (movie == null)
+            if (currentMovie == null)
             {
                 return NotFound();
             }
 
-            return movie;
+            //MovieDTO dto = new MovieDTO();
+            //dto.Id = currentMovie.Id;
+            //dto.Title = currentMovie.Title;
+            //dto.Description = currentMovie.Description;
+            //dto.Price = currentMovie.Price;
+            //dto.IMDB_Rating = currentMovie.IMDB_Rating;
+            //dto.Genre = currentMovie.Genre;
+            //dto.CommentsList = currentMovie.MovieComments.ToDTOs();
+
+            //return dto;
+
+            return currentMovie.MovieToDTOWithRelation();
         }
 
         // PUT: api/Movies/5

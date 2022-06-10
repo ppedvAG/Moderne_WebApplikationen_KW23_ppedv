@@ -9,7 +9,7 @@
         public double IMDB_Rating { get; set; }
         public GenreType Genre { get; set; }
 
-        public virtual ICollection<Movie> MovieComments { get; set; }
+        public virtual ICollection<MovieCustomerComments> MovieComments { get; set; }
     }
 
     public enum GenreType { Action, Drama, Comedy, Horror, ScienceFiction, History, Biography, Family, Romance, Animations, Classic, Docu }

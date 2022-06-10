@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASPNETCORE_IOC_StandaloneSa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieAPIService", "MovieAPIService\MovieAPIService.csproj", "{718F17C7-6607-4345-905F-AB2F4021B2BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieAPIServiceNET5", "MovieAPIServiceNET5\MovieAPIServiceNET5.csproj", "{F287C3CA-AB56-45FE-836E-504E5B68FB10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieAPIServiceNET5", "MovieAPIServiceNET5\MovieAPIServiceNET5.csproj", "{F287C3CA-AB56-45FE-836E-504E5B68FB10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{16B33CE0-A221-4C3C-8E75-C8462D16E3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.OData.Server", "gRPC.OData.Server\gRPC.OData.Server.csproj", "{B09C74B5-DE0D-4180-9672-B311D60B71E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.OData.Client", "gRPC.OData.Client\gRPC.OData.Client.csproj", "{C78219C2-D67A-47ED-8075-63315A34A950}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{F287C3CA-AB56-45FE-836E-504E5B68FB10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F287C3CA-AB56-45FE-836E-504E5B68FB10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F287C3CA-AB56-45FE-836E-504E5B68FB10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16B33CE0-A221-4C3C-8E75-C8462D16E3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16B33CE0-A221-4C3C-8E75-C8462D16E3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16B33CE0-A221-4C3C-8E75-C8462D16E3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16B33CE0-A221-4C3C-8E75-C8462D16E3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09C74B5-DE0D-4180-9672-B311D60B71E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09C74B5-DE0D-4180-9672-B311D60B71E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09C74B5-DE0D-4180-9672-B311D60B71E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09C74B5-DE0D-4180-9672-B311D60B71E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C78219C2-D67A-47ED-8075-63315A34A950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C78219C2-D67A-47ED-8075-63315A34A950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C78219C2-D67A-47ED-8075-63315A34A950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C78219C2-D67A-47ED-8075-63315A34A950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
