@@ -23,10 +23,11 @@ namespace gRPC.OData.Client
             Console.WriteLine($"\nOData: List Shelves:");
 
             string requestUri = $"{_baseUri}/odata/shelves";
+            
             using HttpClient client = new HttpClient();
             HttpResponseMessage response = await client.GetAsync(requestUri);
             Console.WriteLine("--Status code: " + response.StatusCode.ToString());
-            string body = await response.Content.ReadAsStringAsync();
+            string body = await response.Content.ReadAsStringAsync(); //body ->JSON
             Console.WriteLine("--Response body:");
             Console.WriteLine(BeautifyJson(body));
             Console.WriteLine();
@@ -46,7 +47,7 @@ namespace gRPC.OData.Client
             request.Content = new StringContent(JsonSerializer.Serialize(shelf));
             request.Content.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
 
-            var response = await client.SendAsync(request);
+            HttpResponseMessage response = await client.SendAsync(request);
 
             Console.WriteLine("--Status code: " + response.StatusCode.ToString());
             string body = await response.Content.ReadAsStringAsync();

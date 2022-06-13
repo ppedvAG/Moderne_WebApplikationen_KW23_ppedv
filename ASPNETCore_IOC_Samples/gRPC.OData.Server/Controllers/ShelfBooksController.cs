@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.OData.Query;
 
 namespace gRPC.OData.Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("odata")]
     [ApiController]
     public class ShelfBooksController : ODataController
     {

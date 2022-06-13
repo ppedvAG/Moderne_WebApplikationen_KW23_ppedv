@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieAPIServiceNET5", "Movi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCWebApp", "MVCWebApp\MVCWebApp.csproj", "{16B33CE0-A221-4C3C-8E75-C8462D16E3F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.OData.Server", "gRPC.OData.Server\gRPC.OData.Server.csproj", "{B09C74B5-DE0D-4180-9672-B311D60B71E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC.OData.Server", "gRPC.OData.Server\gRPC.OData.Server.csproj", "{B09C74B5-DE0D-4180-9672-B311D60B71E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.OData.Client", "gRPC.OData.Client\gRPC.OData.Client.csproj", "{C78219C2-D67A-47ED-8075-63315A34A950}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gRPC.OData.Client", "gRPC.OData.Client\gRPC.OData.Client.csproj", "{C78219C2-D67A-47ED-8075-63315A34A950}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI_CQRS_MediatR", "WebAPI_CQRS_MediatR", "{DC1B2156-8D21-49E6-8F8F-D308B9F6F7EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS_MediatR_MovieAPI", "CQRS_MediatR_MovieAPI\CQRS_MediatR_MovieAPI.csproj", "{697E1D15-7080-495D-B25F-C40EED49C7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordSample", "RecordSample\RecordSample.csproj", "{9147613E-D6C5-439B-A74A-0AE5A9BA48C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,9 +57,20 @@ Global
 		{C78219C2-D67A-47ED-8075-63315A34A950}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C78219C2-D67A-47ED-8075-63315A34A950}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C78219C2-D67A-47ED-8075-63315A34A950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{697E1D15-7080-495D-B25F-C40EED49C7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{697E1D15-7080-495D-B25F-C40EED49C7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{697E1D15-7080-495D-B25F-C40EED49C7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{697E1D15-7080-495D-B25F-C40EED49C7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9147613E-D6C5-439B-A74A-0AE5A9BA48C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9147613E-D6C5-439B-A74A-0AE5A9BA48C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9147613E-D6C5-439B-A74A-0AE5A9BA48C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9147613E-D6C5-439B-A74A-0AE5A9BA48C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{697E1D15-7080-495D-B25F-C40EED49C7C4} = {DC1B2156-8D21-49E6-8F8F-D308B9F6F7EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4B69C366-E168-43CB-A8C8-EDB7D9AB2F3C}

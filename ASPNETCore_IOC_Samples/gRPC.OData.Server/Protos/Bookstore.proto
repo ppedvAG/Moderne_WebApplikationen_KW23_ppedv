@@ -10,7 +10,6 @@ service Bookstroe {
 	rpc CreateShelf(CreateShelfRequest) returns (Shelf) {}
 	rpc GetShel(GetShelfRequest) returns (Shelf) {}
 
-
 	rpc ListBooks(ListBookRequest) returns (ListBooksResponse) {}
 	rpc CreateBook(CreateBookRequest) returns (Book) {}
 	rpc GetBook(GetBookRequest) returns (Book) {}

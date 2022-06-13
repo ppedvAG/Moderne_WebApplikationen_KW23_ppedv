@@ -7,7 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers()
-    .AddOData(opt => opt.EnableQueryFeatures().AddRouteComponents("odata", EdmModelBuilder.GetEdmModel()));
+    .AddOData(opt => {
+        opt.EnableQueryFeatures().AddRouteComponents("odata", EdmModelBuilder.GetEdmModel());
+        //Feature Freischaltung
+    });
 
 
 
