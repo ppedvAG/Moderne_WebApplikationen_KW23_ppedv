@@ -58,7 +58,7 @@ namespace CQRS_MediatR_MovieAPI.Behaviors
             _logger.LogInformation($"Handled {typeof(TResponse).Name}");
 
 
-            await _mediator.Publish(new MovieAddedNotification(new Movie() { Id = 10, Title = "Test", Description = "wäre witzig", Genre = Data.Entities.GenreType.ScienceFiction, Price = 12m}));
+            await _mediator.Publish(new MovieAddedNotification(new Movie() { Id = 1, Title = "Test", Description = "wäre witzig", Genre = Data.Entities.GenreType.ScienceFiction, Price = 12m}));
             return response;
         }
     }
