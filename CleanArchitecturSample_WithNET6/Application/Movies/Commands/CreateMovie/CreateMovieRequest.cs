@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 namespace Application.Movies.Commands.CreateMovie
 {
     //Das Requested DTO - Object
-    public sealed record CreateMovieRequest(string Title, string Description, decimal Price, GenreType genreType);
+    public sealed record CreateMovieRequest(string Title, string Description, decimal Price, int Genre);
 }

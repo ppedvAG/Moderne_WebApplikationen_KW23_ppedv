@@ -76,3 +76,5 @@ C:\Aktueller Kurs\Moderne_WebApplikationen_KW23_ppedv\CleanArchitecturSample_Wit
 C:\Aktueller Kurs\Moderne_WebApplikationen_KW23_ppedv\CleanArchitecturSample_WithNET6\MovieWebAPI\obj\Debug\net6.0\MovieWebAPI.pdb
 C:\Aktueller Kurs\Moderne_WebApplikationen_KW23_ppedv\CleanArchitecturSample_WithNET6\MovieWebAPI\obj\Debug\net6.0\MovieWebAPI.genruntimeconfig.cache
 C:\Aktueller Kurs\Moderne_WebApplikationen_KW23_ppedv\CleanArchitecturSample_WithNET6\MovieWebAPI\obj\Debug\net6.0\ref\MovieWebAPI.dll
+C:\Aktueller Kurs\Moderne_WebApplikationen_KW23_ppedv\CleanArchitecturSample_WithNET6\MovieWebAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Aktueller Kurs\Moderne_WebApplikationen_KW23_ppedv\CleanArchitecturSample_WithNET6\MovieWebAPI\bin\Debug\net6.0\MediatR.Extensions.FluentValidation.AspNetCore.dll

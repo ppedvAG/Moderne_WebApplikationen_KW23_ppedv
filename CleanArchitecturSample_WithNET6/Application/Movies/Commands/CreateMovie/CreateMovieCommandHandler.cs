@@ -32,7 +32,7 @@ namespace Application.Movies.Commands.CreateMovie
             movie.Title = request.Title;
             movie.Description = request.Description;
             movie.Price = request.Price;
-            movie.Genre = (GenreType)request.Genre;
+            movie.Genre = request.Genre;
 
             
             await _movieRepository.Insert(movie);

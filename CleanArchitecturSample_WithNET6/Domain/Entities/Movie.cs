@@ -7,7 +7,7 @@
             public string Title { get; set; }
             public string Description { get; set; }
             public decimal Price { get; set; }
-            public GenreType Genre { get; set; }
+            public int Genre { get; set; }
         }
 
         public enum GenreType { Action, Drama, Comedy, Horror, ScienceFiction, History, Biography, Family, Romance, Animations, Classic, Docu }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3Vk0Iga0JQNafq5zGwSmJlL7HjJHwR51qK6viziCmfY1ViI8W14DU2/E2b1LaJFsug849PC/NAVkT+7I/tA4/g==",
+  "dgSpecHash": "6bIWQK+mhEWc+AamKsN3tADzM2jpAdwCYusyGW+24drhXM54numswcEnnQ3CkjB7ps2xUy3+IdUF8DzVuzuG8A==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Moderne_WebApplikationen_KW23_ppedv\\ASPNETCore_IOC_Samples\\gRPC.OData.Server\\gRPC.OData.Server.csproj",
   "expectedPackageFiles": [
@@ -39,7 +39,11 @@
     "C:\\Users\\kw4\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\system.text.encodings.web\\4.7.2\\system.text.encodings.web.4.7.2.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512"
+    "C:\\Users\\kw4\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.4\\microsoft.netcore.app.host.win-x64.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.4\\microsoft.aspnetcore.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.4\\microsoft.windowsdesktop.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.4\\microsoft.netcore.app.ref.6.0.4.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using MovieWebAPI.Middleware;
 using Persistence;
 using Persistence.Repositories;
+using FluentValidation;
+using Application.Abstractions.Messaging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,17 +27,18 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 
 
 var applicationAssembly = typeof(Application.AssemblyReference).Assembly;
+
+
 builder.Services.AddMediatR(applicationAssembly);
 
 builder.Services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
+builder.Services.AddValidatorsFromAssembly(applicationAssembly);
 
-
-
+builder.Services.AddTransient<ValidationExceptionHandlingMiddleware>();
 var app = builder.Build();
 
 
@@ -52,7 +55,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<ValidationExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

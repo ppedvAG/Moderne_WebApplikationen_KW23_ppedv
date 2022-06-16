@@ -1,12 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "UZjCS5YEmI5pkzcik7oZnd59pjigPd2E1ID6vp751QHM/ECF8/5tyLc9l+xZL/2mNom7XtyNPMraLtC5tVaj2w==",
+  "dgSpecHash": "lCdILasZIngH0B0v+zLngDwR2geIZD6mLbV/ngVg8WXB7v+NLeamBaJ0vk4+gw6BIziqpGV79wsDPhPRUGbhLA==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Moderne_WebApplikationen_KW23_ppedv\\ASPNETCore_IOC_Samples\\ASPNETCORE_IOC_StandaloneSample\\ASPNETCORE_IOC_StandaloneSample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kw4\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
     "C:\\Users\\kw4\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\kw4\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\kw4\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.4\\microsoft.netcore.app.host.win-x64.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.4\\microsoft.aspnetcore.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.4\\microsoft.windowsdesktop.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.4\\microsoft.netcore.app.ref.6.0.4.nupkg.sha512"
   ],
   "logs": []
 }

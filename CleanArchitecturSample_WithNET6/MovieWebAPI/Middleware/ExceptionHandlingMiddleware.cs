@@ -17,6 +17,7 @@ namespace MovieWebAPI.Middleware
             try
             {
                 await next(context);
+
             }
             catch (Exception e)
             {

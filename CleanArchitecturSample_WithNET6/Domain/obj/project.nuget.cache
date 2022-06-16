@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NwX7ECQo6Lyi5UDyVKRV2BGfmzPolRRR+ra5b/2V9ZEoBP8lTMcfwE5CWP/rBWOh2Jn6lhfPXLMNYOkBZ6Y8dg==",
+  "dgSpecHash": "fPi7cqo/CkP1OHRw06PxaizyGVWA0h8WlMsovPuS7AYJcYmM0aLePCOwHuhlR7X+eKF0ZaMIQrG3mG0gKiV7dA==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Moderne_WebApplikationen_KW23_ppedv\\CleanArchitecturSample_WithNET6\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.4\\microsoft.aspnetcore.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.4\\microsoft.windowsdesktop.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.4\\microsoft.netcore.app.ref.6.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -38,7 +38,7 @@ namespace Application.Movies.Commands.UpdateMovie
             movie.Title = request.Title;
             movie.Description = request.Description;
             movie.Price = request.Price;
-            movie.Genre = (GenreType)request.Genre;
+            movie.Genre = request.Genre;
 
             await _unitOfWork.SaveChangesAsync(cancellationToken);
 

@@ -53,7 +53,7 @@ namespace Presentation.Controllers
         [ProducesResponseType(typeof(MovieResponse), StatusCodes.Status201Created)]
         public async Task<IActionResult> CreateMovie([FromBody] CreateMovieRequest request, CancellationToken cancellationToken)
         {
-            var command = request.Adapt<CreateMovieCommand>();
+            CreateMovieCommand command = request.Adapt<CreateMovieCommand>();
 
             MovieResponse movie = await _sender.Send(command, cancellationToken);
 

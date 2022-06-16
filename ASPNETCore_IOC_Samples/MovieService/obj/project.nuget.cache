@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "EfgZlhO/FFaEHkd11aNKwAme1C+r2lJu9OZmWZy9K+tu4PWzLv9Mib8M6+lFQiJ9U6wnLbT+Eq9ooyRiuk1X7w==",
+  "dgSpecHash": "BCTz5DrstkvZkAN5AV/Jadbgv7TLVykX0gU9iGCB2GddzZ5ruuwLTOJL75xN8m659dPfv0+dKA8q2e+rcL3PTQ==",
   "success": true,
   "projectFilePath": "C:\\Aktueller Kurs\\Moderne_WebApplikationen_KW23_ppedv\\ASPNETCore_IOC_Samples\\MovieService\\MovieService.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.4\\microsoft.aspnetcore.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.4\\microsoft.windowsdesktop.app.ref.6.0.4.nupkg.sha512",
+    "C:\\Users\\kw4\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.4\\microsoft.netcore.app.ref.6.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

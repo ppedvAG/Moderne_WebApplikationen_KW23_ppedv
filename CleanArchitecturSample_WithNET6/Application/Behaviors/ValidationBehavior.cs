@@ -1,4 +1,8 @@
-﻿using Application.Abstractions.Messaging;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Application.Abstractions.Messaging;
 using FluentValidation;
 using MediatR;
 using ValidationException = Application.Exceptions.ValidationException;
@@ -6,9 +10,8 @@ using ValidationException = Application.Exceptions.ValidationException;
 namespace Application.Behaviors
 {
     public sealed class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
-       where TRequest : class, ICommand<TResponse>
+       where TRequest : class, ICommand<TResponse> //Insert oder für Update 
     {
-        
         private readonly IEnumerable<IValidator<TRequest>> _validators;
 
         public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators) => _validators = validators;
